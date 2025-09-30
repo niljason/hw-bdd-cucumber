@@ -8,6 +8,7 @@ Given(/the following movies exist/) do |movies_table|
   end
 end
 
+
 Then(/(.*) seed movies should exist/) do |n_seeds|
   expect(Movie.count).to eq n_seeds.to_i
 end
